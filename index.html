@@ -44,6 +44,18 @@
         .button:hover {
             background-color: #0056b3;
         }
+        .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 20px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
     </style>
 </head>
 <body>
@@ -51,8 +63,10 @@
         <h1>Welcome to My GitHub Page</h1>
         <p>This is a simple homepage hosted on GitHub Pages.</p>
         <p>Check out my <a href="https://github.com/longle0702">GitHub profile</a>.</p>
-        <img src="https://th.bing.com/th/id/OIP.H7-DkHMBEgRT_2SPAATSWgHaEo?w=1728&h=1080&rs=1&pid=ImgDetMain" width="600" alt="Image Description">
-        <button class="button" onclick="alert('Thank you for visiting!')">Click Me</button>
+        <div class="image-container">
+            <img src="https://th.bing.com/th/id/OIP.H7-DkHMBEgRT_2SPAATSWgHaEo?w=1728&h=1080&rs=1&pid=ImgDetMain" alt="Image Description">
+            <button class="button" onclick="alert('Thank you for visiting!')">Click Me</button>
+        </div>
     </div>
 </body>
 </html>
