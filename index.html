@@ -64,18 +64,19 @@
         <p>I'm Long Le and I will work on this webpage soon (In a professional way!)</p>
         <p>Check out my <a href="https://github.com/longle0702">GitHub profile</a>.</p>
         <div class="image-container">
-            <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExNmVzYnkxNDM2a21weDFxeDRyaXNrNDliZzU4ZHZxY2ExMm54Z3FjaSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/vS8deMiryn69PFGwJQ/giphy.gif" alt="Image Description">
+            <img id="mainImage" src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExNmVzYnkxNDM2a21weDFxeDRyaXNrNDliZzU4ZHZxY2ExMm54Z3FjaSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/vS8deMiryn69PFGwJQ/giphy.gif" alt="Image Description">
             <button class="button" onclick="playMusic()">Click Me!</button>
         </div>
         <audio id="myAudio">
-            <source src="https://raw.githubusercontent.com/longle0702/longle0702.github.io/main/dawg.mp3
-" type="audio/mpeg">
+            <source src="https://raw.githubusercontent.com/longle0702/longle0702.github.io/main/dawg.mp3" type="audio/mpeg">
         </audio>
     </div>
     <script>
         function playMusic() {
             var audio = document.getElementById('myAudio');
+            var image = document.getElementById('mainImage');
             audio.play();
+            image.src = "https://i.kym-cdn.com/entries/icons/original/000/050/902/i_just_lost_my_dawg.jpg";
         }
     </script>
 </body>
